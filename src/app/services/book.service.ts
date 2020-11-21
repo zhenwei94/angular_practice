@@ -13,7 +13,7 @@ export class BookService {
     
   APIurl = 'http://localhost:8000/api/'
 
-  bookurl = `${this.APIurl}booknumbers/`;
+  bookurl = `${this.APIurl}books/`;
 
   constructor(private httpClient:HttpClient) { }
 

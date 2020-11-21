@@ -16,7 +16,10 @@ export class AuthorComponent implements OnInit {
   ngOnInit(): void {
     this.authorService.getAllAuthors().subscribe(
       data => {
-        console.log(data)
+        console.log(data);
+      },
+      error => {
+        console.log(error);
       }
     )
   }
