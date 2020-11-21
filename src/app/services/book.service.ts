@@ -18,7 +18,7 @@ export class BookService {
   constructor(private httpClient:HttpClient) { }
 
   getAllBooks(){
-    return = this.httpClient.get(this.bookurl,{headers:this.headers});
+    return this.httpClient.get(this.bookurl,{headers:this.headers});
 
   }
 
