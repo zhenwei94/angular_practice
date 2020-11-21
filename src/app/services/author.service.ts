@@ -6,6 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AuthorService {
+  APIurl = 'http://localhost:8000/api'
 
   headers = new HttpHeaders({
     'Content-Type': 'application/json',
@@ -17,8 +18,9 @@ export class AuthorService {
   ) { }
 
   getAllAuthors(){
+    
     return this.http.get(
-      `localhost:8000/api/books/`, {headers: this.headers}
+      `${this.APIurl}/books/`, {headers: this.headers}
     )
   }
 
