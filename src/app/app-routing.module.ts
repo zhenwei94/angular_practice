@@ -8,7 +8,8 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot(routes)],
   exports: [
     RouterModule,
-    HttpClientModule]
+    HttpClientModule
+  ]
 })
 export class AppRoutingModule { }
 
