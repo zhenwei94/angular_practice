@@ -18,7 +18,7 @@ export class AuthorService {
 
   getAllAuthors(){
     return this.http.get(
-      `localhost:8000/api/books/`, {headers: this.headers}
+      'http://localhost:8000/api/authors/', {headers: this.headers}
     )
   }
 
