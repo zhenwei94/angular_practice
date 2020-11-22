@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BookRoutingModule } from './book-routing.module';
 import { BookComponent } from './book.component';
+import { JwPaginationModule } from 'jw-angular-pagination';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BookComponent } from './book.component';
   ],
   imports: [
     CommonModule,
-    BookRoutingModule
+    BookRoutingModule,
+    JwPaginationModule
   ]
 })
 export class BookModule { }

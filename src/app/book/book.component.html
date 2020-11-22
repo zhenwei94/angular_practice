@@ -4,11 +4,12 @@
             <tr>
                 <th>title</th>
                 <th>description</th>
-
+                <th></th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let book of books">
+            <!-- <tr *ngFor="let book of books"> -->
+            <tr *ngFor="let book of pageOfItems">
 
                 <td>{{ book.title }}</td>
                 <td> {{ book.description }}</td>
@@ -18,6 +19,11 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- pagination panel -->
+    <jw-pagination [items]="books" (changePage)="onChangePage($event)" initialPage=1 pageSize=4></jw-pagination>
+
+
     <div class="card text-center" *ngIf="selectedBook">
         <!-- <div class="card-header">
             {{selectedBook.title}}
